@@ -141,7 +141,4 @@ class RaceReport {
         return times.stream().max(Integer::compareTo).get();
     }
 
-    private Integer sum(List<Integer> times) {
-        return times.stream().collect(summingInt(Integer::intValue));
-    }
 }
